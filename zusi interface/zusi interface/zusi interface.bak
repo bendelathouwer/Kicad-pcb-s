@@ -1,0 +1,669 @@
+EESchema Schematic File Version 4
+LIBS:zusi interface-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP32:ESP32-WROOM U2
+U 1 1 5AF581E9
+P 9340 2020
+F 0 "U2" H 9315 3407 60  0000 C CNN
+F 1 "ESP32-WROOM" H 9315 3301 60  0000 C CNN
+F 2 "ESP32-footprints-Lib:ESP32-WROOM" H 9690 3370 60  0001 C CNN
+F 3 "" H 8890 2470 60  0001 C CNN
+	1    9340 2020
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5AF58252
+P 7740 1270
+F 0 "#PWR0101" H 7740 1120 50  0001 C CNN
+F 1 "+3.3V" H 7755 1443 50  0000 C CNN
+F 2 "" H 7740 1270 50  0001 C CNN
+F 3 "" H 7740 1270 50  0001 C CNN
+	1    7740 1270
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7740 1420 8390 1420
+$Comp
+L Device:R R4
+U 1 1 5AF582F0
+P 8040 1520
+F 0 "R4" V 7950 1470 50  0000 C CNN
+F 1 "R" V 8040 1520 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 7970 1520 50  0001 C CNN
+F 3 "~" H 8040 1520 50  0001 C CNN
+	1    8040 1520
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8390 1520 8190 1520
+Wire Wire Line
+	7890 1520 7740 1520
+Wire Wire Line
+	7740 1270 7740 1420
+Connection ~ 7740 1420
+Wire Wire Line
+	7740 1420 7740 1520
+Wire Wire Line
+	10240 1470 10500 1470
+Wire Wire Line
+	10240 1570 10500 1570
+$Comp
+L power:GND #PWR0102
+U 1 1 5AF584D7
+P 10430 3180
+F 0 "#PWR0102" H 10430 2930 50  0001 C CNN
+F 1 "GND" H 10435 3007 50  0000 C CNN
+F 2 "" H 10430 3180 50  0001 C CNN
+F 3 "" H 10430 3180 50  0001 C CNN
+	1    10430 3180
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5AF584ED
+P 8550 3110
+F 0 "#PWR0103" H 8550 2860 50  0001 C CNN
+F 1 "GND" H 8555 2937 50  0000 C CNN
+F 2 "" H 8550 3110 50  0001 C CNN
+F 3 "" H 8550 3110 50  0001 C CNN
+	1    8550 3110
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8390 2720 8390 2820
+Wire Wire Line
+	8390 3110 8550 3110
+Wire Wire Line
+	8550 3110 8890 3110
+Wire Wire Line
+	8890 3110 8890 3070
+Connection ~ 8550 3110
+Wire Wire Line
+	10240 2570 10430 2570
+Wire Wire Line
+	10240 2670 10430 2670
+Wire Wire Line
+	10430 2570 10430 2670
+Connection ~ 10430 2670
+Wire Wire Line
+	10430 2670 10430 3180
+Wire Wire Line
+	10240 1270 10550 1270
+Wire Wire Line
+	10240 1370 10560 1370
+$Comp
+L Device:R R5
+U 1 1 5AF5A211
+P 10620 2470
+F 0 "R5" V 10530 2420 50  0000 C CNN
+F 1 "R" V 10620 2470 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10550 2470 50  0001 C CNN
+F 3 "~" H 10620 2470 50  0001 C CNN
+	1    10620 2470
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10240 2470 10470 2470
+Wire Wire Line
+	10770 2470 11150 2470
+Wire Wire Line
+	11150 2470 11150 2190
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5AF5A597
+P 11150 2190
+F 0 "#PWR0104" H 11150 2040 50  0001 C CNN
+F 1 "+3.3V" H 11165 2363 50  0000 C CNN
+F 2 "" H 11150 2190 50  0001 C CNN
+F 3 "" H 11150 2190 50  0001 C CNN
+	1    11150 2190
+	1    0    0    -1  
+$EndComp
+Text Label 10500 1470 2    50   ~ 0
+RX
+Text Label 10500 1570 2    50   ~ 0
+TX
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 5AF5A606
+P 11070 970
+F 0 "#PWR0105" H 11070 820 50  0001 C CNN
+F 1 "+3.3V" H 11085 1143 50  0000 C CNN
+F 2 "" H 11070 970 50  0001 C CNN
+F 3 "" H 11070 970 50  0001 C CNN
+	1    11070 970 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5AF5A61A
+P 10700 1270
+F 0 "R6" V 10790 1260 50  0000 C CNN
+F 1 "R" V 10700 1270 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10630 1270 50  0001 C CNN
+F 3 "~" H 10700 1270 50  0001 C CNN
+	1    10700 1270
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5AF5A6EA
+P 10710 1370
+F 0 "R7" V 10620 1320 50  0000 C CNN
+F 1 "R" V 10710 1370 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10640 1370 50  0001 C CNN
+F 3 "~" H 10710 1370 50  0001 C CNN
+	1    10710 1370
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10850 1270 11070 1270
+Wire Wire Line
+	10860 1370 11070 1370
+Wire Wire Line
+	11070 970  11070 1270
+Connection ~ 11070 1270
+Wire Wire Line
+	11070 1270 11070 1370
+Text Label 10300 1270 0    50   ~ 0
+SDA
+Text Label 10310 1370 0    50   ~ 0
+SCL
+NoConn ~ 8390 1620
+NoConn ~ 8390 1720
+NoConn ~ 8390 1820
+NoConn ~ 8390 1920
+NoConn ~ 8390 2020
+NoConn ~ 8390 2420
+NoConn ~ 8390 2520
+NoConn ~ 8990 3080
+NoConn ~ 9090 3070
+NoConn ~ 9200 3070
+NoConn ~ 9290 3070
+NoConn ~ 9390 3070
+NoConn ~ 9490 3070
+NoConn ~ 9590 3070
+NoConn ~ 9690 3070
+NoConn ~ 9790 3070
+NoConn ~ 10240 2370
+NoConn ~ 10240 2270
+NoConn ~ 10240 2170
+NoConn ~ 10240 2070
+NoConn ~ 10240 1970
+NoConn ~ 10240 1870
+NoConn ~ 10240 1670
+$Comp
+L dk_LED-Indication-Discrete:LTST-C191TBKT D2
+U 1 1 5AF5F433
+P 7050 1980
+F 0 "D2" H 7000 1839 60  0000 C CNN
+F 1 "LTST-C191TBKT" H 7050 1830 60  0001 C CNN
+F 2 "digikey-footprints:0603" H 7250 2180 60  0001 L CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf" H 7250 2280 60  0001 L CNN
+F 4 "160-1647-1-ND" H 7250 2380 60  0001 L CNN "Digi-Key_PN"
+F 5 "LTST-C191TBKT" H 7250 2480 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 7250 2580 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 7250 2680 60  0001 L CNN "Family"
+F 8 "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf" H 7250 2780 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/lite-on-inc/LTST-C191TBKT/160-1647-1-ND/573587" H 7250 2880 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED BLUE CLEAR 0603 SMD" H 7250 2980 60  0001 L CNN "Description"
+F 11 "Lite-On Inc." H 7250 3080 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7250 3180 60  0001 L CNN "Status"
+	1    7050 1980
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_LED-Indication-Discrete:LTST-C191TBKT D1
+U 1 1 5AF5F6BE
+P 7040 2310
+F 0 "D1" H 6880 2410 60  0000 C CNN
+F 1 "LTST-C191TBKT" H 7040 2160 60  0001 C CNN
+F 2 "digikey-footprints:0603" H 7240 2510 60  0001 L CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf" H 7240 2610 60  0001 L CNN
+F 4 "160-1647-1-ND" H 7240 2710 60  0001 L CNN "Digi-Key_PN"
+F 5 "LTST-C191TBKT" H 7240 2810 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 7240 2910 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 7240 3010 60  0001 L CNN "Family"
+F 8 "http://optoelectronics.liteon.com/upload/download/DS22-2000-230/LTST-C191TBKT.pdf" H 7240 3110 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/lite-on-inc/LTST-C191TBKT/160-1647-1-ND/573587" H 7240 3210 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED BLUE CLEAR 0603 SMD" H 7240 3310 60  0001 L CNN "Description"
+F 11 "Lite-On Inc." H 7240 3410 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7240 3510 60  0001 L CNN "Status"
+	1    7040 2310
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5AF5F89F
+P 7640 1980
+F 0 "R3" V 7550 1930 50  0000 C CNN
+F 1 "R" V 7640 1980 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7570 1980 50  0001 C CNN
+F 3 "~" H 7640 1980 50  0001 C CNN
+	1    7640 1980
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5AF603E8
+P 7610 2310
+F 0 "R2" V 7520 2260 50  0000 C CNN
+F 1 "R" V 7610 2310 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7540 2310 50  0001 C CNN
+F 3 "~" H 7610 2310 50  0001 C CNN
+	1    7610 2310
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7760 2310 8130 2310
+Wire Wire Line
+	8130 2310 8130 2220
+Wire Wire Line
+	8130 2220 8390 2220
+Wire Wire Line
+	8390 2120 8130 2120
+Wire Wire Line
+	8130 2120 8130 1980
+Wire Wire Line
+	8130 1980 7790 1980
+Wire Wire Line
+	7490 1980 7350 1980
+Wire Wire Line
+	7460 2310 7340 2310
+Wire Wire Line
+	6840 2310 6660 2310
+Wire Wire Line
+	6660 2310 6660 1980
+Wire Wire Line
+	6660 1980 6670 1980
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 5AF63A28
+P 6690 1820
+F 0 "#PWR0106" H 6690 1670 50  0001 C CNN
+F 1 "+3.3V" H 6705 1993 50  0000 C CNN
+F 2 "" H 6690 1820 50  0001 C CNN
+F 3 "" H 6690 1820 50  0001 C CNN
+	1    6690 1820
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6670 1980 6670 1820
+Wire Wire Line
+	6670 1820 6690 1820
+Connection ~ 6670 1980
+Wire Wire Line
+	6670 1980 6850 1980
+Text Label 8220 1520 0    50   ~ 0
+Enable
+Text Label 10270 2470 0    50   ~ 0
+GPIO0
+$Comp
+L Interface_Expansion:PCF8574A U1
+U 1 1 5AF5E501
+P 3900 1690
+F 0 "U1" H 3900 1400 50  0000 C CNN
+F 1 "PCF8574A" V 3900 1730 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 3900 1690 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf" H 3900 1690 50  0001 C CNN
+	1    3900 1690
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3260 1290 3400 1290
+Wire Wire Line
+	3400 1390 3260 1390
+$Comp
+L Device:R R1
+U 1 1 5AF601BC
+P 2950 2090
+F 0 "R1" V 2860 2040 50  0000 C CNN
+F 1 "R" V 2950 2090 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2880 2090 50  0001 C CNN
+F 3 "~" H 2950 2090 50  0001 C CNN
+	1    2950 2090
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3100 2090 3400 2090
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5AF60B90
+P 2510 1950
+F 0 "#PWR0107" H 2510 1800 50  0001 C CNN
+F 1 "+3.3V" H 2630 2030 50  0000 C CNN
+F 2 "" H 2510 1950 50  0001 C CNN
+F 3 "" H 2510 1950 50  0001 C CNN
+	1    2510 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2090 2510 2090
+Wire Wire Line
+	2510 2090 2510 1950
+$Comp
+L Jumper:SolderJumper_3_Open JP3
+U 1 1 5AF617FF
+P 2910 860
+F 0 "JP3" H 2910 974 50  0000 C CNN
+F 1 "SolderJumper_3_Open" H 2910 974 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2910 860 50  0001 C CNN
+F 3 "~" H 2910 860 50  0001 C CNN
+	1    2910 860 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP2
+U 1 1 5AF6183F
+P 2230 870
+F 0 "JP2" H 2230 984 50  0000 C CNN
+F 1 "SolderJumper_3_Open" H 2230 984 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2230 870 50  0001 C CNN
+F 3 "~" H 2230 870 50  0001 C CNN
+	1    2230 870 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 5AF61875
+P 1580 890
+F 0 "JP1" H 1580 1004 50  0000 C CNN
+F 1 "SolderJumper_3_Open" H 1580 1004 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1580 890 50  0001 C CNN
+F 3 "~" H 1580 890 50  0001 C CNN
+	1    1580 890 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2230 1020 2230 1690
+Wire Wire Line
+	2230 1690 3400 1690
+Wire Wire Line
+	3400 1790 1580 1790
+Wire Wire Line
+	1580 1790 1580 1040
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 5AF67257
+P 3170 720
+F 0 "#PWR0108" H 3170 570 50  0001 C CNN
+F 1 "+3.3V" H 3290 800 50  0000 C CNN
+F 2 "" H 3170 720 50  0001 C CNN
+F 3 "" H 3170 720 50  0001 C CNN
+	1    3170 720 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 5AF6727E
+P 2490 750
+F 0 "#PWR0109" H 2490 600 50  0001 C CNN
+F 1 "+3.3V" H 2610 830 50  0000 C CNN
+F 2 "" H 2490 750 50  0001 C CNN
+F 3 "" H 2490 750 50  0001 C CNN
+	1    2490 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0110
+U 1 1 5AF672A5
+P 1840 780
+F 0 "#PWR0110" H 1840 630 50  0001 C CNN
+F 1 "+3.3V" H 1960 860 50  0000 C CNN
+F 2 "" H 1840 780 50  0001 C CNN
+F 3 "" H 1840 780 50  0001 C CNN
+	1    1840 780 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1780 890  1840 890 
+Wire Wire Line
+	1840 890  1840 780 
+Wire Wire Line
+	2430 870  2490 870 
+Wire Wire Line
+	2490 870  2490 750 
+Wire Wire Line
+	3110 860  3170 860 
+Wire Wire Line
+	3170 860  3170 720 
+$Comp
+L power:GND #PWR0111
+U 1 1 5AF6E260
+P 1930 1180
+F 0 "#PWR0111" H 1930 930 50  0001 C CNN
+F 1 "GND" H 1935 1007 50  0000 C CNN
+F 2 "" H 1930 1180 50  0001 C CNN
+F 3 "" H 1930 1180 50  0001 C CNN
+	1    1930 1180
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5AF6E439
+P 2590 1180
+F 0 "#PWR0112" H 2590 930 50  0001 C CNN
+F 1 "GND" H 2595 1007 50  0000 C CNN
+F 2 "" H 2590 1180 50  0001 C CNN
+F 3 "" H 2590 1180 50  0001 C CNN
+	1    2590 1180
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5AF6E460
+P 1210 1110
+F 0 "#PWR0113" H 1210 860 50  0001 C CNN
+F 1 "GND" H 1215 937 50  0000 C CNN
+F 2 "" H 1210 1110 50  0001 C CNN
+F 3 "" H 1210 1110 50  0001 C CNN
+	1    1210 1110
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1210 1110 1210 890 
+Wire Wire Line
+	1210 890  1380 890 
+Wire Wire Line
+	1930 1180 1930 870 
+Wire Wire Line
+	1930 870  2030 870 
+Wire Wire Line
+	2590 1180 2590 860 
+Wire Wire Line
+	2590 860  2710 860 
+Wire Wire Line
+	3400 1590 2910 1590
+Wire Wire Line
+	2910 1590 2910 1010
+Text Label 3260 1290 0    50   ~ 0
+SCL
+Text Label 3260 1390 0    50   ~ 0
+SDA
+Text Label 3170 2090 0    50   ~ 0
+~int
+Wire Wire Line
+	8230 2320 8390 2320
+Text Label 8230 2320 0    50   ~ 0
+~int
+$Comp
+L power:+3.3V #PWR0114
+U 1 1 5AF7A30C
+P 3900 710
+F 0 "#PWR0114" H 3900 560 50  0001 C CNN
+F 1 "+3.3V" H 4020 790 50  0000 C CNN
+F 2 "" H 3900 710 50  0001 C CNN
+F 3 "" H 3900 710 50  0001 C CNN
+	1    3900 710 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 710  3900 990 
+$Comp
+L power:GND #PWR0115
+U 1 1 5AF7B95A
+P 3900 2550
+F 0 "#PWR0115" H 3900 2300 50  0001 C CNN
+F 1 "GND" H 3905 2377 50  0000 C CNN
+F 2 "" H 3900 2550 50  0001 C CNN
+F 3 "" H 3900 2550 50  0001 C CNN
+	1    3900 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2550 3900 2390
+Wire Wire Line
+	4400 1290 4610 1290
+Wire Wire Line
+	4400 1390 4610 1390
+Wire Wire Line
+	4400 1490 4610 1490
+Wire Wire Line
+	4400 1590 4620 1590
+Wire Wire Line
+	4400 1690 4620 1690
+Wire Wire Line
+	4400 1790 4620 1790
+Wire Wire Line
+	4400 1890 4630 1890
+NoConn ~ 4400 1990
+$Comp
+L conectors:TAGconnect CON1
+U 1 1 5AF62C36
+P 10280 4200
+F 0 "CON1" H 10607 3976 50  0000 L CNN
+F 1 "TAGconnect" H 10607 3885 50  0000 L CNN
+F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 10280 4200 50  0001 C CNN
+F 3 "" H 10280 4200 50  0001 C CNN
+	1    10280 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5AF62D66
+P 3280 4470
+F 0 "#PWR0116" H 3280 4220 50  0001 C CNN
+F 1 "GND" H 3285 4297 50  0000 C CNN
+F 2 "" H 3280 4470 50  0001 C CNN
+F 3 "" H 3280 4470 50  0001 C CNN
+	1    3280 4470
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3280 4280 3280 4470
+$Comp
+L power:+3.3V #PWR0117
+U 1 1 5AF64B89
+P 3270 3920
+F 0 "#PWR0117" H 3270 3770 50  0001 C CNN
+F 1 "+3.3V" H 3390 4000 50  0000 C CNN
+F 2 "" H 3270 3920 50  0001 C CNN
+F 3 "" H 3270 3920 50  0001 C CNN
+	1    3270 3920
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3270 4080 3270 3920
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5AF66E6E
+P 2110 4220
+F 0 "J1" H 2030 3895 50  0000 C CNN
+F 1 "Conn_01x02" H 2030 3986 50  0000 C CNN
+F 2 "Connector_Wago:Wago_734-132_1x02_P3.50mm_Vertical" H 2110 4220 50  0001 C CNN
+F 3 "~" H 2110 4220 50  0001 C CNN
+	1    2110 4220
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2400 4080 2400 4120
+Wire Wire Line
+	2400 4120 2310 4120
+Wire Wire Line
+	2320 4220 2400 4220
+Wire Wire Line
+	2400 4220 2400 4280
+Wire Wire Line
+	2400 4080 3270 4080
+Wire Wire Line
+	2400 4280 3280 4280
+$Comp
+L power:+3.3V #PWR0118
+U 1 1 5AF76D88
+P 9730 4130
+F 0 "#PWR0118" H 9730 3980 50  0001 C CNN
+F 1 "+3.3V" H 9745 4303 50  0000 C CNN
+F 2 "" H 9730 4130 50  0001 C CNN
+F 3 "" H 9730 4130 50  0001 C CNN
+	1    9730 4130
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5AF76DB3
+P 9740 4880
+F 0 "#PWR0119" H 9740 4630 50  0001 C CNN
+F 1 "GND" H 9745 4707 50  0000 C CNN
+F 2 "" H 9740 4880 50  0001 C CNN
+F 3 "" H 9740 4880 50  0001 C CNN
+	1    9740 4880
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10080 4200 9730 4200
+Wire Wire Line
+	9730 4200 9730 4130
+Wire Wire Line
+	10080 4700 9740 4700
+Wire Wire Line
+	9740 4700 9740 4880
+Wire Wire Line
+	10080 4300 9730 4300
+Wire Wire Line
+	10080 4400 9730 4400
+Wire Wire Line
+	10080 4500 9730 4500
+Wire Wire Line
+	10080 4600 9740 4600
+Text Label 9730 4300 0    50   ~ 0
+GPIO0
+Text Label 9730 4400 0    50   ~ 0
+Enable
+Text Label 9730 4500 0    50   ~ 0
+RX
+Text Label 9740 4600 0    50   ~ 0
+TX
+$Comp
+L Device:Buzzer BZ1
+U 1 1 5AF87CFD
+P 8080 2720
+F 0 "BZ1" H 8086 3010 50  0000 C CNN
+F 1 "Buzzer" H 8086 2919 50  0000 C CNN
+F 2 "Buzzer_Beeper:Buzzer_Murata_PKMCS0909E4000-R1" V 8055 2820 50  0001 C CNN
+F 3 "~" V 8055 2820 50  0001 C CNN
+	1    8080 2720
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8180 2620 8390 2620
+Wire Wire Line
+	8180 2820 8390 2820
+Connection ~ 8390 2820
+Wire Wire Line
+	8390 2820 8390 3110
+$EndSCHEMATC
