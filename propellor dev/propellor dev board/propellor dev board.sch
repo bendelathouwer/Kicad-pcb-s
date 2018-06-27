@@ -1,0 +1,171 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Parallax:P8X32A-D40 U?
+U 1 1 5B33F33F
+P 5630 3400
+F 0 "U?" H 5600 3220 50  0000 C CNN
+F 1 "P8X32A-D40" H 5620 3380 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 5630 4600 50  0001 C CNN
+F 3 "https://www.parallax.com/sites/default/files/downloads/P8X32A-Propeller-Datasheet-v1.4.0_0.pdf" H 5630 3400 50  0001 C CNN
+	1    5630 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B33F4F0
+P 5570 4750
+F 0 "#PWR?" H 5570 4500 50  0001 C CNN
+F 1 "GND" H 5575 4577 50  0000 C CNN
+F 2 "" H 5570 4750 50  0001 C CNN
+F 3 "" H 5570 4750 50  0001 C CNN
+	1    5570 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5530 4500 5530 4750
+Wire Wire Line
+	5530 4750 5570 4750
+Wire Wire Line
+	5570 4750 5630 4750
+Wire Wire Line
+	5630 4750 5630 4500
+Connection ~ 5570 4750
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5B33F568
+P 5580 2180
+F 0 "#PWR?" H 5580 2030 50  0001 C CNN
+F 1 "+3.3V" H 5595 2353 50  0000 C CNN
+F 2 "" H 5580 2180 50  0001 C CNN
+F 3 "" H 5580 2180 50  0001 C CNN
+	1    5580 2180
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B33F58E
+P 5860 6960
+F 0 "#PWR?" H 5860 6710 50  0001 C CNN
+F 1 "GND" H 5865 6787 50  0000 C CNN
+F 2 "" H 5860 6960 50  0001 C CNN
+F 3 "" H 5860 6960 50  0001 C CNN
+	1    5860 6960
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5B33F5A8
+P 6480 6930
+F 0 "#PWR?" H 6480 6780 50  0001 C CNN
+F 1 "+3.3V" H 6495 7103 50  0000 C CNN
+F 2 "" H 6480 6930 50  0001 C CNN
+F 3 "" H 6480 6930 50  0001 C CNN
+	1    6480 6930
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5B33F672
+P 6140 6840
+F 0 "#FLG?" H 6140 6915 50  0001 C CNN
+F 1 "PWR_FLAG" H 6140 7014 50  0000 C CNN
+F 2 "" H 6140 6840 50  0001 C CNN
+F 3 "~" H 6140 6840 50  0001 C CNN
+	1    6140 6840
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5B33F686
+P 6820 6970
+F 0 "#FLG?" H 6820 7045 50  0001 C CNN
+F 1 "PWR_FLAG" H 6820 7144 50  0000 C CNN
+F 2 "" H 6820 6970 50  0001 C CNN
+F 3 "~" H 6820 6970 50  0001 C CNN
+	1    6820 6970
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6480 6930 6480 6970
+Wire Wire Line
+	6480 6970 6820 6970
+Wire Wire Line
+	5860 6960 6140 6960
+Wire Wire Line
+	6140 6960 6140 6840
+Wire Wire Line
+	5530 2300 5530 2180
+Wire Wire Line
+	5530 2180 5580 2180
+Wire Wire Line
+	5630 2300 5630 2180
+Wire Wire Line
+	5630 2180 5580 2180
+Connection ~ 5580 2180
+$Comp
+L Device:Crystal_Small Y?
+U 1 1 5B33F840
+P 6940 2560
+F 0 "Y?" V 6894 2648 50  0000 L CNN
+F 1 "Crystal_Small" V 6985 2648 50  0000 L CNN
+F 2 "Crystal:Crystal_HC18-U_Vertical" H 6940 2560 50  0001 C CNN
+F 3 "~" H 6940 2560 50  0001 C CNN
+	1    6940 2560
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6330 2600 6330 2670
+Wire Wire Line
+	6940 2670 6940 2660
+Wire Wire Line
+	6330 2670 6940 2670
+Wire Wire Line
+	6940 2460 6330 2460
+Wire Wire Line
+	6330 2460 6330 2500
+$Comp
+L power:GND #PWR?
+U 1 1 5B33FF44
+P 4070 2810
+F 0 "#PWR?" H 4070 2560 50  0001 C CNN
+F 1 "GND" H 4075 2637 50  0000 C CNN
+F 2 "" H 4070 2810 50  0001 C CNN
+F 3 "" H 4070 2810 50  0001 C CNN
+	1    4070 2810
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4070 2810 4070 2600
+Wire Wire Line
+	4070 2600 4930 2600
+Wire Wire Line
+	4510 2500 4930 2500
+Wire Wire Line
+	6330 4200 6520 4200
+Wire Wire Line
+	6330 4300 6520 4300
+Text Label 6520 4200 2    50   ~ 0
+TX
+Text Label 6520 4300 2    50   ~ 0
+Rx
+Text Label 4510 2500 0    50   ~ 0
+~res
+Wire Wire Line
+	4730 2800 4930 2800
+Wire Wire Line
+	4930 2900 4730 2900
+$EndSCHEMATC
